@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "1036348482807",
+    "project_id": "ttc-logistics",
+    "storage_bucket": "ttc-logistics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036348482807:android:c18648420d2bc370b69ff2",
+        "android_client_info": {
+          "package_name": "com.ttclogistics.chuhang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036348482807-gufqppch1eoqfemonasm9nm2j7hkv0md.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPStaOnqlqd6ZZbrgyoxSYfRxTceynjmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036348482807-gufqppch1eoqfemonasm9nm2j7hkv0md.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1036348482807-385oe07e8ice7mq9nqtrhp9985tf2tca.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "pixa.vn.ChuXeLogistics"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036348482807:android:172a660f3dd550b3b69ff2",
+        "android_client_info": {
+          "package_name": "com.ttclogistics.chuxe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036348482807-gufqppch1eoqfemonasm9nm2j7hkv0md.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPStaOnqlqd6ZZbrgyoxSYfRxTceynjmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036348482807-gufqppch1eoqfemonasm9nm2j7hkv0md.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1036348482807-385oe07e8ice7mq9nqtrhp9985tf2tca.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "pixa.vn.ChuXeLogistics"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036348482807:android:1b5c39e6fe006996b69ff2",
+        "android_client_info": {
+          "package_name": "com.ttclogistics.taixe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036348482807-gufqppch1eoqfemonasm9nm2j7hkv0md.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPStaOnqlqd6ZZbrgyoxSYfRxTceynjmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036348482807-gufqppch1eoqfemonasm9nm2j7hkv0md.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1036348482807-385oe07e8ice7mq9nqtrhp9985tf2tca.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "pixa.vn.ChuXeLogistics"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

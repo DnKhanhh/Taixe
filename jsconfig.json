@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "screens/*": ["./src/screens/*"],
+      "components/*": ["./src/components/*"],
+      "appRedux/*": ["./src/appRedux/*"],
+      "navigation/*": ["./src/navigation/*"],
+      "utils/*": ["./src/utils/*"],
+      "assets/*": ["./src/assets/*"],
+      "hooks/*": ["./src/hooks/*"],
+      "helpers/*": ["./src/helpers/*"],
+      "locales/*": ["./src/locales/*"],
+      "animations/*": ["./src/animations/*"]
+    }
+  }
+}
+
+// {
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "~/*": ["./src/*"],
+//     }
+//   }
+// }

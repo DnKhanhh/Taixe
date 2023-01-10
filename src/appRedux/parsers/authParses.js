@@ -1,0 +1,133 @@
+import _ from 'lodash';
+import {monthSelect, dateSelect} from 'utils/appUtils';
+
+export const parseUserInfo = obj => {
+  if (_.isObject(obj)) {
+    const {
+      id,
+      fullName,
+      email,
+      phone,
+      companyName,
+      profileType,
+      accountType,
+      status,
+      name,
+      backImageOfId,
+      frontImageOfId,
+      personalIdNumber,
+      idDateIssue,
+      idPlaceIssue,
+      gender,
+      dob,
+      contactAddress,
+      contactCityId,
+      contactDistrictId,
+      avatarUrl,
+      permanentAddressCityId,
+      permanentAddressDistrictId,
+      permanentAddress,
+      address,
+      cityId,
+      districtId,
+      companyTaxNumber,
+      frontCompanyRegistrationCertificatePicture,
+      backCompanyRegistrationCertificatePicture,
+      companyRegisterName,
+      companyRegisterLocation,
+      companyActiveDate,
+      companyLegalRepresentative,
+      numberPlate,
+      accountId,
+      frontTransportBusinessLicensePicture,
+      endTransportBusinessLicensePicture,
+      transportBusinessLicenseNumberDateEnd,
+      transportBusinessLicenseNumberDateActive,
+      createdAt,
+      updatedAt,
+      driverLicenseClass,
+      driverLicenseDateOfExpiry,
+      driverLicense,
+      vehicleGroups,
+      district,
+      contactDistrict,
+      city,
+      citycontactCity,
+      permanentAddressDistrict,
+      permanentAddressCity,
+      accountTypeFlag,
+      rating, //temp for BE add rating
+      classification, //temp for BE add classification
+      mark, //temp for BE add mark
+    } = obj || {};
+    return {
+      ...obj,
+      id: id || accountId,
+      name: name || fullName || '',
+      phone: phone,
+      email: email,
+      profileType: profileType,
+      accountType: accountType || 'personal',
+      accountId: accountId,
+      status: status,
+      dob: dob || '',
+      gender: gender,
+      avatarUrl: avatarUrl,
+      frontImageOfId: frontImageOfId,
+      backImageOfId: backImageOfId,
+      idPlaceIssue: idPlaceIssue || '',
+      idDateIssue: idDateIssue || '',
+      address: address,
+      companyName: companyName,
+      personalIdNumber: personalIdNumber || '',
+      frontCompanyRegistrationCertificatePicture:
+        frontCompanyRegistrationCertificatePicture,
+      backCompanyRegistrationCertificatePicture:
+        backCompanyRegistrationCertificatePicture,
+      contactAddress: contactAddress,
+      frontTransportBusinessLicensePicture:
+        frontTransportBusinessLicensePicture,
+      endTransportBusinessLicensePicture: endTransportBusinessLicensePicture, //check with BE to confirm admin using back
+      createdAt: monthSelect(createdAt) ?? 'mm/yyyy',
+      updatedAt: dateSelect(updatedAt) ?? 'dd/mm/yyyy',
+      driverLicenseClassId:
+        driverLicenseClass?.driverLicenseClass?.id ||
+        driverLicenseClass?.driverLicenseClassId ||
+        '',
+      driverLicenseClassName:
+        driverLicenseClass?.driverLicenseClass?.name || '',
+      driverLicenseDateOfExpiry: driverLicenseDateOfExpiry || '',
+      driverLicense: driverLicense || '',
+      permanentAddressCityId,
+      permanentAddressDistrictId,
+      permanentAddress,
+      companyTaxNumber,
+      companyRegisterName,
+      companyRegisterLocation,
+      companyActiveDate: companyActiveDate || '',
+      companyLegalRepresentative,
+      numberPlate,
+      transportBusinessLicenseNumberDateEnd:
+        transportBusinessLicenseNumberDateEnd || '',
+      transportBusinessLicenseNumberDateActive:
+        transportBusinessLicenseNumberDateActive || '',
+      contactCityId,
+      contactDistrictId,
+      cityId,
+      districtId,
+      permanentAddressDistrictName: permanentAddressDistrict?.name,
+      permanentAddressCityName: permanentAddressCity?.name,
+      contactDistrictName: contactDistrict?.name,
+      contactCityName: citycontactCity?.name,
+      cityName: city?.name,
+      districtName: district?.name,
+      vehicleGroups: vehicleGroups ?? [],
+      vehicleGroupsIds: vehicleGroups?.map(item => item?.vehicleGroupId) || [],
+      accountTypeFlag,
+      rating: rating,
+      classification: classification,
+      mark: mark,
+    };
+  }
+  return {};
+};
